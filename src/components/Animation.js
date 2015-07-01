@@ -13,7 +13,6 @@ function Animation (node) {
 
 Animation.prototype.start = function start () {
     // request an update to start the animation
-    this.node.requestUpdate(this.id);
     // begin driving the animation
     this.xPosition.from(100).to(1000, {duration: 1000});
     this.node.requestUpdate(this.id);
